@@ -1,0 +1,91 @@
+body{
+    background-color:#555;
+    background: -webkit-linear-gradient(to right, #636362, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #636362, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  h2{
+    color: white;
+  }
+  
+  h3{
+    color: white;
+  }
+  
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #373737;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /* Sidebar links */
+    a {
+      display: block;
+      color: rgb(238, 228, 228);
+      padding: 16px;
+      text-decoration: none;
+    }
+    .grupo1{
+        margin-left: 2px;
+        padding: 4px 16px;
+        height: 25px;
+    }
+    .grupo2{
+        margin-left: 2px;
+        padding: 4px 16px;
+        height: 25px;
+    }
+    .grupo3{
+        margin-left: 2px;
+        padding: 4px 16px;
+        height: 25px;
+    }
+    .grupo4{
+        margin-left: 2px;
+        padding: 4px 16px;
+        height: 25px;
+    }
+    /* Active/current link */
+    .sidebar a.active {
+      background-color: #373737;
+      color: white;
+    }
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+  
+  
